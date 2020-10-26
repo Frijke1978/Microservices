@@ -26,6 +26,7 @@
 .bashrc
 .config/
 .docker/
+.kube
 .gitconfig
 .landscape/
 .motd_shown
