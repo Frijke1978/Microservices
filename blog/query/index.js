@@ -33,17 +33,17 @@ const handleEvent = (type, data) => {
 
     comment.status = status;
     comment.content = content;
-  };
+  }
 };
 
 app.get('/posts', (req, res) => {
   res.send(posts);
 });
 
-app.post('/events', async (req, res) => {
+app.post('/events', (req, res) => {
   const { type, data } = req.body;
 
-handleEvent(type, data);
+  handleEvent(type, data);
 
   res.send({});
 });
@@ -53,7 +53,7 @@ app.listen(4002, async () => {
 
   const res = await axios.get('http://event-bus-srv:4005/events');
 
-  for ( let event of res.data) {
+  for (let event of res.data) {
     console.log('Processing event:', event.type);
 
     handleEvent(event.type, event.data);
