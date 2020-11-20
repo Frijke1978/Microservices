@@ -11,7 +11,7 @@ build:
     - image: 28071978/client
       context: client
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: 'src/**/*.js'
@@ -19,7 +19,7 @@ build:
     - image: 28071978/comments
       context: comments
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: '*.js'
@@ -27,7 +27,7 @@ build:
     - image: 28071978/event-bus
       context: event-bus
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: '*.js'
@@ -35,7 +35,7 @@ build:
     - image: 28071978/moderation
       context: moderation
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: '*.js'
@@ -43,7 +43,7 @@ build:
     - image: 28071978/posts
       context: posts
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: '*.js'
@@ -51,7 +51,7 @@ build:
     - image: 28071978/query
       context: query
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: '*.js'
