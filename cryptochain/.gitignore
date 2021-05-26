@@ -2,10 +2,10 @@
 
 # dependencies
 /node_modules
-/dist
+node_modules/
 /.pnp
 .pnp.js
-React/
+
 # testing
 /coverage
 
@@ -18,27 +18,7 @@ React/
 .env.development.local
 .env.test.local
 .env.production.local
-.aws
-.azure
-.cache
-.bash_history
-.bash_logout
-.bashrc
-.config/
-.docker/
-.kube
-.gitconfig
-.landscape/
-.motd_shown
-.npm/
-.profile
-.sudo_as_admin_successful
-.vscode-server/        
-
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.viminfo
-.skaffold/cache
-.skaffold/config

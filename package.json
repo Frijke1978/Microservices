@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "create-react-app": "^4.0.3"
-  }
+    "@alch/alchemy-web3": "^1.0.2",
+    "create-react-app": "^4.0.3",
+    "vim": "^0.1.0"
+  },
+  "name": "frijke"
 }
